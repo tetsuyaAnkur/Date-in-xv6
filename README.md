@@ -26,7 +26,7 @@ It uses the numbers of system calls defined above as indexes for a pointer
 to each system call function defined elsewhere. At the end of this function
 pointer array, I added the following line -
                 
-                [SYS_getyear] sys_date,
+                [SYS_date] sys_date,
                 
 This means, when a system call occurred with the system call number 22, the
 function pointed by the function pointer sys_date will be called.
